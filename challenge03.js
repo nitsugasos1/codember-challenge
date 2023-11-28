@@ -516,7 +516,7 @@ function ordenarCodigo(codigo) {
 
 ordenarCodigo(codigoEcriptado)
 
-function validacion(lista) {
+function validacion(lista, nroDeRespuestasInvalidas) {
     let nroDePassInvalidas = 0;
     lista.map((element) => {
         const [min, max, key, pass] = element.split(' ');
@@ -536,11 +536,14 @@ function validacion(lista) {
                 
                 invalidPass = pass
                 nroDePassInvalidas += 1
-                console.log("Esta no esta bien. " + "Pass invalida: " + invalidPass + ". Nro de pass invalidas: " + nroDePassInvalidas)
+                if (nroDePassInvalidas == nroDeRespuestasInvalidas){
+                    console.log("Esta no esta bien. " + "Pass invalida: " + invalidPass + ". Nro de pass invalidas: " + nroDePassInvalidas)
+                }
+                
                 
             }
         }
     })
 }
-validacion( ordenarCodigo(codigoEcriptado))
+validacion(ordenarCodigo(codigoEcriptado), 1)
 
