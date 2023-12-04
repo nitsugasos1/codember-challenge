@@ -128,7 +128,7 @@ function reformarNombres(NombresArchivos, verfFileNumber) {
                         conteoNewB = conteoB.join('')
                         conteoFinal = conteoFinal + 1 
                         if(verfUsario == conteoFinal){
-                            console.log(conteoNewB, " y ", conteoNewA, " y es el archivo correcto nro ", conteoFinal)
+                            console.log("El archivo verificado es correcto, su nro  es ", conteoFinal, " y se llama ", conteoNewA)
                         }                 
                     } 
                 }
@@ -136,4 +136,4 @@ function reformarNombres(NombresArchivos, verfFileNumber) {
         }
     })
 }
-reformarNombres(archivos, 33)
+reformarNombres(archivos, 2)
