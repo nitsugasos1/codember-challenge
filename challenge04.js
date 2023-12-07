@@ -103,7 +103,7 @@ Cb2n1GNN-Cb2n1G
 
 function reformarNombres(NombresArchivos, verfFileNumber) {
     let verfUsario = verfFileNumber
-    let conteoTotal = 0
+    
     
 
     const archivo = NombresArchivos.split(/[\s]/);
