@@ -510,7 +510,7 @@ function ordenarCodigo(codigo) {
         listaOrdenada.push(ordenando)
         
     }
-    console.log(listaOrdenada)
+    
     return listaOrdenada
 }
 
@@ -537,7 +537,7 @@ function validacion(lista, nroDeRespuestasInvalidas) {
                 invalidPass = pass
                 nroDePassInvalidas += 1
                 if (nroDePassInvalidas == nroDeRespuestasInvalidas){
-                    console.log("Esta no esta bien. " + "Pass invalida: " + invalidPass + ". Nro de pass invalidas: " + nroDePassInvalidas)
+                    console.log("Password invalida: " + invalidPass + ". Nro de pass invalidas: " + nroDePassInvalidas)
                 }
                 
                 
